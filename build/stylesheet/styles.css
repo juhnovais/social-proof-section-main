@@ -1,0 +1,188 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background-image: url(../../images/bg-pattern-top-mobile.svg), url(../../images/bg-pattern-bottom-mobile.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(../../images/bg-pattern-top-desktop.svg), url(../../images/bg-pattern-bottom-desktop.svg);
+  }
+}
+body main {
+  margin: 60px 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  body main {
+    justify-content: flex-start;
+    display: flex;
+    flex-flow: column;
+    gap: 100px;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body main header {
+    display: flex;
+    gap: 36px;
+    justify-content: space-between;
+  }
+  body main header .topHeader {
+    width: 50%;
+    text-align: left;
+  }
+  body main header .topHeader h1 {
+    text-align: left;
+    font-size: 3.2rem;
+  }
+  body main header .topHeader p {
+    text-align: left;
+  }
+}
+body main h1 {
+  color: hsl(300, 43%, 22%);
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+body main p {
+  color: hsl(300, 43%, 22%);
+  margin: 0;
+}
+body main p.subheading {
+  text-align: center;
+  line-height: 1.2;
+}
+body main .rates {
+  margin: 50px 0;
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+}
+@media only screen and (min-width: 568px) {
+  body main .rates {
+    flex-flow: row;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body main .rates {
+    width: auto;
+    flex-flow: column;
+    margin: 0;
+  }
+  body main .rates .rate1 {
+    margin-right: 60px;
+  }
+  body main .rates .rate2 {
+    margin-right: 30px;
+    margin-left: 50px;
+  }
+  body main .rates .rate3 {
+    margin-left: 100px;
+  }
+}
+body main .rates .rate {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+}
+@media only screen and (min-width: 568px) {
+  body main .rates .rate {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body main .rates .rate {
+    display: flex;
+    flex-flow: row;
+    width: auto;
+    gap: 30px;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    max-width: 326px;
+    padding: 15px 36px;
+  }
+  body main .rates .rate p {
+    text-align: left;
+  }
+}
+body main .rates .rate .img {
+  display: inline-flex;
+  gap: 5px;
+}
+body main .rates .rate p {
+  font-weight: 700;
+  margin-top: 10px;
+}
+body main .cards {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+}
+@media only screen and (min-width: 768px) {
+  body main .cards {
+    flex-flow: row;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body main .cards {
+    gap: 26px;
+    justify-content: space-between;
+  }
+  body main .cards .card1 {
+    margin-bottom: 60px;
+  }
+  body main .cards .card2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  body main .cards .card3 {
+    margin-top: 60px;
+  }
+}
+body main .cards .card {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 8px;
+  padding: 36px 26px;
+}
+body main .cards .card .cardheading {
+  display: flex;
+  flex-flow: row;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 26px;
+}
+body main .cards .card .cardheading img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+body main .cards .card .cardheading p {
+  line-height: 1.2;
+}
+body main .cards .card .cardheading p.avatarTitle {
+  color: hsl(333, 80%, 67%);
+}
+body main .cards .card .cardContent p {
+  line-height: 1.3;
+}
+body main .cards .card p {
+  color: hsl(300, 24%, 96%);
+}
+
+/*# sourceMappingURL=styles.css.map */
